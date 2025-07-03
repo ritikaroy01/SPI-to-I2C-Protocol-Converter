@@ -19,7 +19,7 @@ This work is a part of my personal hardware design portfolio and showcases my ab
 | Item                | Details                          |
 |---------------------|----------------------------------|
 | HDL Language        | Verilog                          |
-| Simulation Tool     | Xilinx ISE 14.7 (ISim)           |
+| Simulation Tool     | Vivado 24.2                      |
 | Target              | RTL-level simulation             |
 | Design Scope        | One SPI master → One I2C slave   |
 
@@ -36,6 +36,7 @@ This work is a part of my personal hardware design portfolio and showcases my ab
 | `top_module.v`           | Top-level integration                    |
 | `testbench.v`            | Verilog testbench for simulation         |
 | `README.md`              | This documentation                       |
+| `SoC to I2P Output.png`  | Simulation Output Image                  |
 
 ---
 
