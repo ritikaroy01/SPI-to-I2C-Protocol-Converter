@@ -25,18 +25,17 @@ This work is a part of my personal hardware design portfolio and showcases my ab
 
 ---
 
-## 📁 Repository Contents
+## 📂 Repository Contents
 
-| File Name                | Description                              |
-|--------------------------|------------------------------------------|
-| `spi_receiver.v`         | SPI master-side logic to receive data    |
-| `i2c_master.v`           | I2C protocol controller (transmitter)    |
-| `protocol_converter.v`   | Core protocol conversion logic           |
-| `clock_divider.v`        | Clock divider for I2C slower clock       |
-| `top_module.v`           | Top-level integration                    |
-| `testbench.v`            | Verilog testbench for simulation         |
-| `README.md`              | This documentation                       |
-| `SoC to I2P Output.png`  | Simulation Output Image                  |
+| File Name       | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| `spitoi2c.v`     | Top-level module that bridges SPI and I²C protocols. It integrates the SPI FSM, SIPO register, and I²C master interface. |
+| `spitoi2ct.v`    | Testbench for verifying the complete SoC-to-I²C protocol conversion design. |
+| `spi_fsm.v`      | SPI finite state machine that receives serial data bits from an SPI master. |
+| `sipo.v`         | Serial-In Parallel-Out shift register used to buffer incoming SPI data.     |
+| `i2cmaster.v`    | I²C master module responsible for sending data over SDA/SCL with proper start, stop, and ACK/NACK sequences. |
+| `i2cslave.v`     | Basic I²C slave implementation to receive and acknowledge data on the I²C bus. |
+
 
 ---
 
