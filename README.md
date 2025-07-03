@@ -35,6 +35,7 @@ This work is a part of my personal hardware design portfolio and showcases my ab
 | `sipo.v`         | Serial-In Parallel-Out shift register used to buffer incoming SPI data.     |
 | `i2cmaster.v`    | I²C master module responsible for sending data over SDA/SCL with proper start, stop, and ACK/NACK sequences. |
 | `i2cslave.v`     | Basic I²C slave implementation to receive and acknowledge data on the I²C bus. |
+| `spitoi2ct_behav.wcfg`     | Simulation File  |
 
 
 ---
